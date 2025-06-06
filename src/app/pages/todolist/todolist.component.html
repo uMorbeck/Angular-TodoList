@@ -1,0 +1,20 @@
+<form [formGroup]="todoForm">
+    <label for="todo">
+        To do:
+        <input type="text" id="todo" formControlName="todo"/>
+    </label>
+    <app-button [buttonType]="'button'" [buttonLabel]="'Add'" (buttonAction)="handleSubmit()"></app-button>
+</form>
+
+<br>
+
+<h3>Lista</h3>
+@for(todo of todos; track todo.id) {
+    <div>
+        <input type="checkbox" (change)="handleStatus(todo.id)">
+        <p>{{ todo.todo }}</p>
+        <app-button [buttonType]="'button'" [buttonLabel]="'Del'" (buttonAction)="handleDelete(todo.id)"></app-button>
+    </div>
+}
+
+

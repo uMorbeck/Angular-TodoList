@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
-import { Button } from '../../components/button/button';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-todolist',
-  imports: [ReactiveFormsModule, Button],
-  templateUrl: './todolist.html',
-  styleUrl: './todolist.css'
+  imports: [ReactiveFormsModule, ButtonComponent],
+  templateUrl: './todolist.component.html',
+  styleUrl: './todolist.component.css'
 })
-export class Todolist {
+export class TodolistComponent {
   todos = new Array();
   id = 0;
 

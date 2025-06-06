@@ -1,19 +1,19 @@
 import { Routes } from '@angular/router';
-import { Home } from './pages/home/home';
-import { User } from './pages/user/user';
-import { Todolist } from './pages/todolist/todolist';
+import { HomeComponent } from './pages/home/home.component';
+import { UserComponent } from './pages/user/user.component';
+import { TodolistComponent } from './pages/todolist/todolist.component';
 
 export const routes: Routes = [
     {
         path: '',
-        component: Home
+        component: HomeComponent
     },
     {
         path: 'user',
-        component: User
+        component: UserComponent
     },
     {
         path: 'todolist',
-        component: Todolist
+        component: TodolistComponent
     }
 ];

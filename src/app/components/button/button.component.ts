@@ -3,12 +3,11 @@ import { Component, input, output } from '@angular/core';
 @Component({
   selector: 'app-button',
   imports: [],
-  templateUrl: './button.html',
-  styleUrl: './button.css'
+  templateUrl: './button.component.html',
+  styleUrl: './button.component.css'
 })
-export class Button {
+export class ButtonComponent {
   buttonType = input<'button' | 'submit' | 'reset'>();
   buttonLabel = input<string>();
   buttonAction = output();
-
 }
