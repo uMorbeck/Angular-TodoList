@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { ButtonComponent } from '../../components/button/button.component';
+import { FormComponent } from '../../components/form/form.component';
+import { ListComponent } from '../../components/list/list.component';
 
 @Component({
   selector: 'app-todolist',
-  imports: [ReactiveFormsModule, ButtonComponent],
+  imports: [FormComponent, ListComponent],
   templateUrl: './todolist.component.html',
   styleUrl: './todolist.component.css'
 })
@@ -12,17 +12,13 @@ export class TodolistComponent {
   todos = new Array();
   id = 0;
 
-  todoForm = new FormGroup({
-    todo: new FormControl('')
-  })
-
-  handleSubmit() {
+  handleAdd(todoText: string) {
     this.todos.push({
       id: this.id,
-      todo: this.todoForm.value.todo,
+      todo: todoText,
       status: false
-    })
-    this.id++
+    });
+    this.id++;
   }
 
   handleStatus(id: number) {

@@ -1,0 +1,7 @@
+<form [formGroup]="todoForm">
+    <label for="todo">
+        To do:
+        <input type="text" id="todo" formControlName="todo"/>
+    </label>
+    <app-button [buttonType]="'button'" [buttonLabel]="'Add'" (buttonAction)="handleSubmit()"></app-button>
+</form>

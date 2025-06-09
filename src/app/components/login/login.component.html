@@ -1,0 +1,13 @@
+<form [formGroup]="loginForm">
+    <label for="username">
+        Username
+        <input type="text" id="username" formControlName="username"/>
+    </label>
+
+    <label for="password">
+        Password
+        <input type="text" id="password" formControlName="password"/>
+    </label>
+
+    <app-button [buttonType]="'button'" [buttonLabel]="'Add'" (buttonAction)="handleSubmit()"></app-button>
+</form>
