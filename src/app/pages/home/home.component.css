@@ -1,0 +1,29 @@
+.page {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background: rgba(250, 249, 253, 1);
+}
+
+.tittle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 35vw;
+  background-color: rgba(0, 92, 187, 1);
+  color: rgba(250, 249, 253, 1);
+}
+
+.login {
+  padding-top: 30vh;
+  width: 65vw;
+}
+
+.logo {
+  height: 15vh;
+  width: auto;
+  margin-top: 30vh;
+  margin-bottom: 7vh;
+}

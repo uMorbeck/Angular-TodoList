@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  background: rgba(250, 249, 253, 1);
+  background: linear-gradient(160deg, rgba(250, 249, 253, 1) 30%, rgba(173, 206, 240, 1) 65%, rgba(0, 92, 187, 1) 100%);
+}
+
+input {
+    border-style: none;
+  border-radius: 9999px;
+  padding-left: 8px;
+  height: 5vh;
+  width: 25vw;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+}

@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
-import { ButtonComponent } from '../button/button.component';
+import { MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [ReactiveFormsModule, ButtonComponent],
+  imports: [ReactiveFormsModule, MatButton],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })

@@ -1,11 +1,12 @@
-<app-form (addTodo)="handleAdd($event)"></app-form>
+<app-header route="User" routeLink="/user"></app-header>
 
-<br>
-
-<app-list 
-    [todos]="todos"
-    (toggleStatus)="handleStatus($event)"
-    (deleteTodo)="handleDelete($event)"
-></app-list>
+<div class="todolist">
+  <app-form (addTodo)="handleAdd($event)"></app-form>
+  <app-list
+      [todos]="todos"
+      (toggleStatus)="handleStatus($event)"
+      (deleteTodo)="handleDelete($event)"
+  ></app-list>
+</div>
 
 

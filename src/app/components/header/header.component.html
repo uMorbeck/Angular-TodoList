@@ -1,0 +1,11 @@
+<div class="header">
+  <div class="siteLogo">
+    <img class="logo" src="logo2.svg"/>
+    <h1>Todolist</h1>
+  </div>
+  <div class="welcomeOptions">
+    <p>Welcome {{username}}</p>
+    <button mat-raised-button [routerLink]="routeLink">{{route}}</button>
+    <button mat-raised-button type="button" (click)="handleLogout()">Logout</button>
+  </div>
+</div>

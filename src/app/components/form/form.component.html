@@ -3,5 +3,5 @@
         To do:
         <input type="text" id="todo" formControlName="todo"/>
     </label>
-    <app-button [buttonType]="'button'" [buttonLabel]="'Add'" (buttonAction)="handleSubmit()"></app-button>
+    <button mat-flat-button type="button" (click)="handleSubmit()">Add</button>
 </form>

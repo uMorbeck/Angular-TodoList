@@ -1,1 +1,8 @@
-
+.todolist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+  padding-top: 5vh;
+}

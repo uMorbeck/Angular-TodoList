@@ -1,0 +1,21 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(27, 27, 40)
+}
+
+label {
+  margin-bottom: 2vh;
+}
+
+input {
+  margin-bottom: 5vh;
+}
+
+button {
+  width: 15vw;
+  margin-top: 5vh;
+  font-size: 1.2em;
+}

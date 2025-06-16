@@ -1,6 +1,12 @@
-div {
+.card {
     display: flex;
-    justify-content: flex-start;
+    margin: 1vh;
+    width: 50vw;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+
+.cardBorder {
+  margin: 1vh;
 }

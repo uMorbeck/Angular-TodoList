@@ -1,7 +1,11 @@
 @for(todo of todos; track todo.id) {
-    <div>
-        <input type="checkbox" [checked]="todo.status" (change)="toggleStatus.emit(todo.id)">
+    <mat-card appearance="outlined" class="cardBorder">
+      <mat-card-content class="card">
+        <mat-checkbox [checked]="todo.status" (change)="toggleStatus.emit(todo.id)"/>
         <p [style.textDecoration]="todo.status ? 'line-through' : 'none'">{{ todo.todo }}</p>
-        <app-button [buttonType]="'button'" [buttonLabel]="'Del'" (buttonAction)="deleteTodo.emit(todo.id)"></app-button>
-    </div>
+        <button mat-icon-button type="button" (click)="deleteTodo.emit(todo.id)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-card-content>
+    </mat-card>
 }

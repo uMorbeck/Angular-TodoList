@@ -1,0 +1,37 @@
+p, h1 {
+  color: rgba(250, 249, 253, 1);
+}
+
+.header {
+  height: 12vh;
+  background-color: rgba(0, 92, 187, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+}
+
+.siteLogo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-right: 5vw;
+  height: 100%;
+}
+
+.welcomeOptions {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 5vw;
+  padding-right: 3vw;
+  height: 100%;
+  gap: 3vw
+}
+
+.logo {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  height: 65%;
+  width: auto;
+}

@@ -1,11 +1,14 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
 import { CommonModule } from '@angular/common';
+import { MatButton, MatIconButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
+import { MatCard, MatCardContent } from '@angular/material/card';
+import { MatCheckbox } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [CommonModule, ButtonComponent],
+  imports: [CommonModule, MatIconButton, MatIcon, MatCard, MatCardContent, MatCheckbox],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })
