@@ -1,10 +1,12 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatButton } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-user-data',
-  imports: [ReactiveFormsModule, MatButton],
+  imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButton],
   templateUrl: './user-data.component.html',
   styleUrl: './user-data.component.css'
 })

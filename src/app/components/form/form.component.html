@@ -1,7 +1,11 @@
 <form [formGroup]="todoForm">
-    <label for="todo">
+    <!-- <label for="todo">
         To do:
         <input type="text" id="todo" formControlName="todo"/>
-    </label>
+    </label> -->
+    <mat-form-field appearance="fill">
+      <mat-label>To do:</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="todo"/>
+    </mat-form-field>
     <button mat-flat-button type="button" (click)="handleSubmit()">Add</button>
 </form>

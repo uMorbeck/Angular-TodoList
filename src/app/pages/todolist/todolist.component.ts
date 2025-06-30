@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { FormComponent } from '../../components/form/form.component';
 import { ListComponent } from '../../components/list/list.component';
 import { HeaderComponent } from '../../components/header/header.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-todolist',
-  imports: [FormComponent, ListComponent, HeaderComponent],
+  imports: [FormComponent, ListComponent, HeaderComponent, FooterComponent],
   templateUrl: './todolist.component.html',
   styleUrl: './todolist.component.css'
 })

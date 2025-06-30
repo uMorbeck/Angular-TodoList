@@ -1,10 +1,13 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatButton } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { CatComponent } from '../cat/cat.component';
 
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule, MatButton],
+  imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButton, CatComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })

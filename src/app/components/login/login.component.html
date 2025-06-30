@@ -1,9 +1,15 @@
 <form [formGroup]="loginForm">
-    <label for="username">Username</label>
-    <input type="text" id="username" formControlName="username"/>
+  <mat-form-field appearence="fill">
+    <mat-label>Username:</mat-label>
+    <input matInput formControlName="username"/>
+  </mat-form-field>
 
-    <label for="password">Password</label>
-    <input type="text" id="password" formControlName="password"/>
+  <mat-form-field appearence="fill">
+    <mat-label>Password:</mat-label>
+    <input matInput formControlName="password"/>
+  </mat-form-field>
 
     <button mat-flat-button type="button" (click)="handleSubmit()">Login</button>
+
+  <app-cat></app-cat>
 </form>
